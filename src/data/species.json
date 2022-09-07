@@ -3,72 +3,72 @@
         "commonName": "Eastern Bluebird",
         "scientificName": "Sialia sialis",
         "speciesCode": "easblu",
-        "image": "../assets/images/eabl.jpg"
+        "image": "assets/images/eabl.jpg"
     },
     {
         "commonName": "Western Bluebird",
         "scientificName": "Sialia mexicana",
         "speciesCode": "wesblu",
-        "image": "src/assets/images/webl.jpg"
+        "image": "../../assets/images/webl.jpg"
     },
     {
         "commonName": "Mountain Bluebird",
         "scientificName": "Sialia currucoides",
         "speciesCode": "moublu",
-        "image": "src/assets/images/mobl.jpg"
+        "image": "../../assets/images/mobl.jpg"
     },
     {
         "commonName": "Painted Bunting",
         "scientificName": "Passerina ciris",
         "speciesCode": "paibun",
-        "image": "src/assets/images/pabu.jpg"
+        "image": "../../assets/images/pabu.jpg"
     },
     {
         "commonName": "White-breasted Nuthatch",
         "scientificName": "Sitta carolinensis",
         "speciesCode": "whbnut",
-        "image": "src/assets/images/wbnu.jpg"
+        "image": "../../assets/images/wbnu.jpg"
     },
     {
         "commonName": "Red-breasted Nuthatch",
         "scientificName": "Sitta canadensis",
         "speciesCode": "rebnut",
-        "image": "src/assets/images/rbnu.jpg"
+        "image": "../../assets/images/rbnu.jpg"
     },
     {
         "commonName": "Brown-headed Nuthatch",
         "scientificName": "Sitta pusilla",
         "speciesCode": "bnhnut",
-        "image": "src/assets/images/bhnu.jpg"
+        "image": "../../assets/images/bhnu.jpg"
     },
     {
         "commonName": "Pygmy Nuthatch",
         "scientificName": "Sitta pygmaea",
         "speciesCode": "pygnut",
-        "image": "src/assets/images/pynu.jpg"
+        "image": "../../assets/images/pynu.jpg"
     }, 
     {
         "commonName": "Eastern Towhee",
         "scientificName": "Pipilo erythrophthalmus",
         "speciesCode": "eastow",
-        "image": "src/assets/images/eato.jpg"
+        "image": "../../assets/images/eato.jpg"
     }, 
     {
         "commonName": "Spotted Towhee",
         "scientificName": "Pipilo maculatus",
         "speciesCode": "spotow",
-        "image": "src/assets/images/spto.jpg"
+        "image": "../../assets/images/spto.jpg"
     },
     {
         "commonName": "American Goldfinch",
         "scientificName": "Spinus tristis",
         "speciesCode": "amegfi",
-        "image": "src/assets/images/amgo.jpg"
+        "image": "../../assets/images/amgo.jpg"
     },
     {
         "commonName": "Lesser Goldfinch",
         "scientificName": "Spinus psaltria",
         "speciesCode": "lesgol",
-        "image": "src/assets/images/lego.jpg"
+        "image": "../../assets/images/lego.jpg"
     }
 ]
