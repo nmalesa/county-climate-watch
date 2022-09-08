@@ -1,0 +1,14 @@
+{
+  "name": "county-climate-watch",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:nmalesa/climate-watch-first-draft.git",
+  "author": "Natalia Malesa <natalia@onlinemeded.org>",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx}\""
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}
