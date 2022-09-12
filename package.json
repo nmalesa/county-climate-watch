@@ -6,9 +6,13 @@
   "author": "Natalia Malesa <natalia@onlinemeded.org>",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{js,jsx}\""
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "format:check": "prettier --check \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "devDependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
     "prettier": "^2.7.1"
   }
 }
