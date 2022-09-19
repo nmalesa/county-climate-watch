@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { states } from "../data/states";
-import countiesData from "../data/counties.json";
+import { countiesData } from "../data/counties";
 
 const SearchParams = () => {
   const [state, setState] = useState("");
@@ -10,6 +10,7 @@ const SearchParams = () => {
 
   useEffect(() => {
     retrieveCounties(state);
+    console.log("Counties: ", counties);
   }, [state]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const retrieveCounties = (state) => {
