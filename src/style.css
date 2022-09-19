@@ -3,9 +3,15 @@ h1 {
     font-weight: 500;
 }
 
-p {
-    font-family: 'Alegreya', 'Times New Roman', Times, serif;
+.logo-icon {
+    width: 50px;
+    height: 50px;
+}
+
+label {
+    font-family: 'Alegreya SC', 'Times New Roman', Times, serif;
     font-weight: 500;
+    letter-spacing: 0.1rem;
 }
 
 .bird-btn {

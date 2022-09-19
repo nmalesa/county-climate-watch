@@ -1,11 +1,12 @@
 import { createRoot } from "react-dom/client";
+import Header from "./components/Header";
 import ButtonsList from "./components/ButtonsList";
 import SearchParams from "./components/SearchParams";
 
 const App = () => {
   return (
     <div>
-      <h1>County Climate Watch</h1>
+      <Header />
       <ButtonsList />
       <SearchParams />
     </div>
