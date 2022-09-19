@@ -1,20 +1,24 @@
 import { useState, useEffect } from "react";
 import { states } from "../data/states";
-import counties from "../data/counties.json";
+import countiesData from "../data/counties.json";
 
 const SearchParams = () => {
   const [state, setState] = useState("");
   const [county, setCounty] = useState("");
 
+  const counties = [];
+
   useEffect(() => {
-    console.log("State: ", state);
-    console.log("First county: ", counties[0]);
-    for (let idx = 0; idx < counties.length; idx++) {
-      if (counties[idx].State === state) {
-        console.log("Counties: ", counties[idx]);
+    retrieveCounties(state);
+  }, [state]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const retrieveCounties = (state) => {
+    for (let idx = 0; idx < countiesData.length; idx++) {
+      if (countiesData[idx].State === state) {
+        counties.push(countiesData[idx].County);
       }
     }
-  }, [state]);
+  };
 
   return (
     <div className="search-params">
@@ -24,8 +28,14 @@ const SearchParams = () => {
           <select
             id="state"
             value={state}
-            onChange={(e) => setState(e.target.value)}
-            onBlur={(e) => setState(e.target.value)}
+            onChange={(e) => {
+              setState(e.target.value);
+              setCounty("");
+            }}
+            onBlur={(e) => {
+              setState(e.target.value);
+              setCounty("");
+            }}
           >
             <option />
             {states.map((state) => (
@@ -44,6 +54,11 @@ const SearchParams = () => {
             onBlur={(e) => setCounty(e.target.value)}
           >
             <option />
+            {counties.map((county) => (
+              <option key="county" value={county}>
+                {county}
+              </option>
+            ))}
           </select>
         </label>
       </form>
