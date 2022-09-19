@@ -3,7 +3,7 @@
         "commonName": "Eastern Bluebird",
         "scientificName": "Sialia sialis",
         "speciesCode": "easblu",
-        "image": "assets/images/eabl.jpg"
+        "image": "../../public/images/eabl.jpg"
     },
     {
         "commonName": "Western Bluebird",

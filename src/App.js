@@ -1,12 +1,15 @@
-import React from 'react';
-import { render } from 'react-dom';
+import { createRoot } from "react-dom/client";
+import BirdButton from "./components/BirdButton";
 
 const App = () => {
-  return React.createElement(
-    "div",
-    {},
-    React.createElement("h1", {}, "County Climate Watch")
+  return (
+    <div>
+      <h1>County Climate Watch</h1>
+      <BirdButton />
+    </div>
   );
 };
 
-render(React.createElement(App), document.getElementById("root"));
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App tab="home" />);

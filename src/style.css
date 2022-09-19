@@ -2,3 +2,15 @@ h1 {
     font-family: 'Alegreya SC', 'Times New Roman', Times, serif;
     font-weight: 500;
 }
+
+p {
+    font-family: 'Alegreya', 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.birdButton {
+    width: 100px;
+    height: 100px;
+    border-radius: 15;
+}
+
