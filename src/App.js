@@ -1,11 +1,11 @@
 import { createRoot } from "react-dom/client";
-import BirdButton from "./components/BirdButton";
+import ButtonsList from "./components/ButtonsList";
 
 const App = () => {
   return (
     <div>
       <h1>County Climate Watch</h1>
-      <BirdButton />
+      <ButtonsList />
     </div>
   );
 };
