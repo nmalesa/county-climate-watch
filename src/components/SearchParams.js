@@ -10,7 +10,6 @@ const SearchParams = () => {
 
   useEffect(() => {
     retrieveCounties(state);
-    console.log("Counties: ", counties);
   }, [state]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const retrieveCounties = (state) => {
@@ -20,6 +19,8 @@ const SearchParams = () => {
       }
     }
   };
+
+  console.log("Counties Other: ", counties);
 
   return (
     <div className="search-params">
@@ -55,6 +56,7 @@ const SearchParams = () => {
             onBlur={(e) => setCounty(e.target.value)}
           >
             <option />
+            {console.log("Counties: ", counties)}
             {counties.map((county) => (
               <option key="county" value={county}>
                 {county}
