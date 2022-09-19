@@ -2,8 +2,8 @@ import { species } from "../data/species";
 
 const ButtonsList = () => {
   const speciesList = species.map((bird) => (
-    <button key={bird.id}>
-      <img className="birdButton" src={bird.image} alt={bird.commonName} />
+    <button className="bird-btn" key={bird.id}>
+      <img className="bird-btn-img" src={bird.image} alt={bird.commonName} />
       <p>{bird.commonName}</p>
     </button>
   ));
